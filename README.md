@@ -10,7 +10,7 @@ This repository contains the official implementation of the paper:
 > Breast segmentation plays a critical role for objective pre‑ and post‑operative aesthetic evaluation but is challenged by limited data, class imbalance, and anatomical variability. We introduce an encoder–decoder framework with a Segment Anything Model (SAM) backbone, enhanced with synthetic depth maps and a multi‑term loss combining weighted cross‑entropy, convexity, and depth alignment constraints. Evaluated on a 120-patient dataset, our approach achieves a balanced test dice score of 98.75%—a 4.5% improvement over prior methods—with dice of 95.5% (breast) and 89.2% (nipple). Depth injection reduces noise and focuses on anatomical regions (+0.47% body, +1.04% breast dice), while convexity optimization improves nipple mask plausibility to 99.86%.
 
 <p align="center">
-  <img src="figs/arch.png" width="800" alt="Model Architecture">
+  <img src="arch.png" width="800" alt="Model Architecture">
 </p>
 
 ## ✨ Key Features
