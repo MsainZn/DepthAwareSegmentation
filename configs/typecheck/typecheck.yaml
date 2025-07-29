@@ -1,0 +1,97 @@
+valid_channels:
+  - rgb
+  - grey
+  - depth
+  - hog
+  - hhaar
+  - vhaar
+  - dhaar
+  - texture
+
+valid_dataset_names:
+  - aesthetics
+  - cinderella
+  - eye
+
+valid_models:
+  - LightUNet
+  - CustomUNet
+  - Segformer_Face
+  - Segformer_MITb0
+  - Segformer_Nvidia
+  - MobileNetV2_DeepLab
+  - MobileViTV2_Apple
+  - BEIT_Microsoft
+  - DPT_INTEL
+  - UperNet_Openmmlab
+  - SAM_MetaC
+  - SAM_MetaT
+  - SAM_MetaC_With_Depth
+  - SAM_MetaC_With_Depth_Infused
+  - SAM_MetaC_With_Depth_Attention
+  - SAM_MetaC_With_Depth_Texture_Infused
+  - SAM_MetaC_With_Depth_Infused2
+  - SAM_MetaC_With_Depth_Attention_2way
+  - SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe
+  - SAM_MetaC_With_Depth_Attention_2way_no_conf
+  # - SAM_MetaC_With_Depth_FFT_Infused
+  # - SAM_MetaC_With_Depth_FFT_Infused_MultiHead
+
+valid_loss_fn_ord:
+  - ord-reg
+  - pair-rank
+  - comb-ord
+
+valid_loss_fn_nrm:
+  - ce
+  - iou
+  - dice
+  - focal
+  - ce-conv
+  - ce-conv-iou
+  - ce-iou
+  - nll
+  - nll-conv
+  - nll-conv-iou
+  - nll-iou
+  - focal-conv
+  - focal-conv-iou
+  - ce-dpt
+  - w-ce-conv-iou
+  - w-ce-dpt
+  - w-ce-conv
+  - w-ce-iou
+  - w-ce-conv-iou-dpt
+  - w-ce-iou-dpt
+  - w-ce-conv-dpt
+  - w-conv-iou-dpt
+  - w-conv-iou
+  - w-ce-envconv-dpt
+  - w-ce-gapconv-dpt
+  - w-ce-envconv
+  - w-ce-gapconv
+  - w-ce-allconv-dpt
+  - w-ce-allconv
+  - w-ce-allconv-l2dpt
+  - w-ce-ballconv-dpt
+  - w-ce-ballconv-mk-dpt
+  - w-ce-ballconv-mk
+  - w-ce-ballconv-mk-cont-dpt
+  - w-ce-ballconv-tmk
+  - w-ce-ballconv-tmk-dpt
+  - w-ce-ballconv-tmk-cont-dpt
+  - w-ce-ballconv-agtmk-dpt
+  - w-ce-ballconv-agtmkatten-dpt
+  - lvz
+  - lvz-dpt
+  - w-lvz
+  - w-lvz-dpt
+  - w-ce-crc
+  - w-ce-env
+  - w-ce-cgp
+  - w-ce-grf
+  - w-ce-ssmi
+  - w-ce-ssmi-dpt
+  - w-ce-elp
+  - w-das
+  - w-ce-gdpt

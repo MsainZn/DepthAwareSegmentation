@@ -1,0 +1,1087 @@
+# sam_trf:
+#   mdl_type: SAM_MetaT
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 1
+#   loss_fn: ce
+#   num_epochs: 150
+#   loss_fn: focal-conv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# Started from here
+
+# sam_conv_ce:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# sam_conv_ce_conv:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce-conv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# sam_conv_focal:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: focal
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# sam_conv_focal_conv:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: focal-conv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# sam_conv_ce_iou:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce-iou
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# sam_conv_ce_conv_iou:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce-conv-iou
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# VERY GOOD RESULTS
+# SAM_MetaC_With_Depth_ce:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-iou:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-iou
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-conv:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-conv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-conv-iou:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-conv-iou
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_With_Depth_w-ce-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_w-ce-iou-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-iou-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_w-ce-conv-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-conv-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_w-ce-conv-iou-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-conv-iou-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+## WORST RESULTS
+# SAM_MetaC_With_Depth_w-conv-iou-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-conv-iou-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+## WORST RESULTS
+# SAM_MetaC_w-conv-iou:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-conv-iou
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_With_Depth_w-ce-envconv-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-envconv-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_w-ce-gapconv-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gapconv-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-envconv:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-envconv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-gapconv:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gapconv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# Next runs
+
+# SAM_MetaC_w-ce-allconv:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-allconv
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_With_Depth_w-ce-allconv-l2dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-allconv-l2dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_w-ce-ballconv-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_w-ce-ballconv-dpt_temp0.5:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_temp0.5:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_temp0.25:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-ballconv-mk-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-mk-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-ballconv-mk:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-mk
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-ballconv-mk3more:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-mk
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-ballconv-mk3more-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-mk-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-ballconv-mk3more-cont-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-mk-cont-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# # Auto multi kernel ones
+# SAM_MetaC_w-ce-ballconv-tmk:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-tmk
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-ballconv-tmk-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-tmk-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-ballconv-tmk-cont-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-tmk-cont-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-ballconv-agtmk-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-agtmk-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-ballconv-agtmkatten-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ballconv-agtmkatten-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_lvz:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: lvz
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-lvz:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-lvz
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-lvz-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-lvz-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_lvz-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: lvz-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-lvz_cosine_scheduler:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# # One by one comparison of different techniques
+# SAM_MetaC_basic:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-dpt
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-crc:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-crc
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-env:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-env
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-cgp:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-cgp
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_w-ce-grf:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-grf
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# ### NEW EXPERIMENTS ON DEPTH MODELS
+# SAM_MetaC_With_Depth_Infused:
+#   mdl_type: SAM_MetaC_With_Depth_Infused
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention:
+#   mdl_type: SAM_MetaC_With_Depth_Attention
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_d:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_w-ce-dpt:
+#   mdl_type: SAM_MetaC_With_Depth
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-dpt
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_basic_b2:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_With_Depth_Texture_Infused_w-ce-ssmib2-big:
+#   mdl_type: SAM_MetaC_With_Depth_Texture_Infused
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ssmi
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+#     - texture
+
+# SAM_MetaC_With_Depth_Texture_Infused_w-ce-ssmi-dptb2-big:
+#   mdl_type: SAM_MetaC_With_Depth_Texture_Infused
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-ssmi-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+#     - texture
+
+# SAM_MetaC_norm2:
+#   mdl_type: SAM_MetaC
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses: null
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+
+# SAM_MetaC_With_Depth_Attention_strikes_back_multi_full:
+#   mdl_type: SAM_MetaC_With_Depth_Attention
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_strikes_back_multi_full_dpt:
+#   mdl_type: SAM_MetaC_With_Depth_Attention
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_strikes_back_multi_full_gdpt:
+#   mdl_type: SAM_MetaC_With_Depth_Attention
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gdpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_2way_with_conf_dropout:
+#   mdl_type: SAM_MetaC_With_Depth_Attention_2way
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gdpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_2way_no_conf:
+#   mdl_type: SAM_MetaC_With_Depth_Attention_2way_no_conf
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gdpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe:
+#   mdl_type: SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gdpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe_drp_no_conf_yes:
+#   mdl_type: SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-gdpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe:
+#   mdl_type: SAM_MetaC_With_Depth_Attention_2way_dpt_inf_pe
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_strikes_back_multi_full_temp:
+#   mdl_type: SAM_MetaC_With_Depth_Attention
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: ce
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+# SAM_MetaC_With_Depth_Attention_strikes_back_multi_full_tem_dpt:
+#   mdl_type: SAM_MetaC_With_Depth_Attention
+#   use_weights: true
+#   weight_decay: 0.00001 #0.0001 # 0.00001
+#   lr: 0.00001 #0.0005 # 0.00001
+#   num_epochs: 200
+#   loss_fn: w-ce-dpt
+#   clses:
+#     - 4
+#     - 5
+#   img_size: 1024
+#   in_channels:
+#     - rgb
+#     - depth
+
+LightUNet_ce:
+  mdl_type: LightUNet
+  img_size: 1024
+  in_channels:
+    - rgb
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: ce
+  clses: null
+
+CustomUNet_ce:
+  mdl_type: CustomUNet
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: ce
+  img_size: 1024
+  in_channels:
+    - rgb
+  clses: null
+
+Segformer_Face_ce:
+  mdl_type: Segformer_Face
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 1024
+  in_channels:
+    - rgb
+  clses: null
+
+Segformer_MITb0_ce:
+  mdl_type: Segformer_MITb0
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 1024
+  in_channels:
+    - rgb
+  clses: null
+
+Segformer_Nvidia_ce:
+  mdl_type: Segformer_Nvidia
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 1024
+  in_channels:
+    - rgb
+  clses: null
+
+MobileNetV2_DeepLab_ce:
+  mdl_type: MobileNetV2_DeepLab
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 224
+  in_channels:
+    - rgb
+  clses: null
+
+MobileViTV2_Apple_ce:
+  mdl_type: MobileViTV2_Apple
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 256
+  in_channels:
+    - rgb
+  clses: null
+
+BEIT_Microsoft_ce:
+  mdl_type: BEIT_Microsoft
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 640
+  in_channels:
+    - rgb
+  clses: null
+
+# A VERY BIG BIG MODEL
+DPT_INTEL_ce:
+  mdl_type: DPT_INTEL
+  img_size: 384
+  in_channels:
+    - rgb
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  clses: null
+
+UperNet_Openmmlab_ce:
+  mdl_type: UperNet_Openmmlab
+  use_weights: True
+  weight_decay: 0.0001
+  lr: 0.0005
+  num_epochs: 100
+  loss_fn: "ce"
+  img_size: 720
+  in_channels:
+    - rgb
+  clses: null
+
+SAM_MetaC_ce:
+  mdl_type: SAM_MetaC
+  use_weights: true
+  weight_decay: 0.00001 #0.0001 # 0.00001
+  lr: 0.00001 #0.0005 # 0.00001
+  num_epochs: 100
+  loss_fn: ce
+  img_size: 1024
+  in_channels:
+    - rgb
+  clses: null

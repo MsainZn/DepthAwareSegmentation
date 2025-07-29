@@ -1,0 +1,62 @@
+[project]
+name = "segmentation-framework"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.5.2",
+    "hydra-core>=1.3.2",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.6",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+    "opencv-python>=4.11.0.86",
+    "pillow>=11.1.0",
+    "pytest>=8.3.5",
+    "python-dotenv>=1.1.0",
+    "pytorch-msssim>=1.0.0",
+    "pytorch-ssim>=0.1",
+    "pywavelets>=1.8.0",
+    "requests>=2.32.3",
+    "ruff>=0.11.2",
+    "scikit-image>=0.25.2",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.2",
+    "seaborn>=0.13.2",
+    "thefuzz>=0.22.1",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.49.0",
+    "wandb>=0.19.8",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
+]
+src = { path = "src", editable = true }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "src",
+]
+
+[tool.pytest.ini_options]
+python_paths = ["src"]

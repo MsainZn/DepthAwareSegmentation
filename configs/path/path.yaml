@@ -1,0 +1,23 @@
+# config.yaml
+PRJ_DIR: ${oc.env:PRJ_DIR}
+
+ipath:
+  CFG_DIR: ${path.PRJ_DIR}/configs
+  HIST_DIR: ${path.PRJ_DIR}/history
+  DTA_DIR: ${path.PRJ_DIR}/dataset
+  IMG_DTA_DIR: ${path.ipath.DTA_DIR}/${dataset.dta_name}/images
+  MSK_DTA_DIR: ${path.ipath.DTA_DIR}/${dataset.dta_name}/masks
+
+opath:
+  ART_DIR: ${path.PRJ_DIR}/artifacts
+  HYD_DIR: ${path.opath.ART_DIR}/hydra
+  BIN_DIR: ${path.opath.ART_DIR}/binary
+  DTA_BIN_DIR: ${path.opath.BIN_DIR}/dataset
+  MDL_BIN_DIR: ${path.opath.BIN_DIR}/model
+  RES_BIN_DIR: ${path.opath.BIN_DIR}/result
+  PLT_DIR: ${path.opath.ART_DIR}/plots
+  GRF_PLT_DIR: ${path.opath.PLT_DIR}/graphs
+  SMP_PLT_DIR: ${path.opath.PLT_DIR}/samples
+  LOG_DIR: ${path.opath.ART_DIR}/logs
+  SLR_LOG_DIR: ${path.opath.LOG_DIR}/slurm
+  MDL_LOG_DIR: ${path.opath.LOG_DIR}/model

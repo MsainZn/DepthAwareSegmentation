@@ -1,0 +1,16 @@
+defaults:
+  - dataset: dataset # General Dataset Parameters
+  - models: models # All model parameters (we have config checks dont worry)
+  - typecheck: typecheck # Valid Options for each config (we have config checks dont worry)
+  - wandb: wandb
+  - path: path # All  Required Paths (its automated dont worry)
+  - _self_
+
+dev_type: cuda:0
+auto_manage_artifacts: False # If True Code manages artifacts by labeling new as artifact and older by timestamp
+
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: artifacts/hydra/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}

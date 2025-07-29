@@ -1,0 +1,18 @@
+dta_name: aesthetics
+is_load_type_lazy: False
+batch_size: 4 # 4
+num_workers: 4 # 4
+img_file_ext:
+  - .jpg
+  - .png
+  - .jpeg
+  - .JPG
+  - .PNG
+  - .JPEG
+msk_file_ext:
+  - .bmp
+split_ratio:
+  train: 0.7
+  val: 0.1
+  test: 0.2
+  random_seed: 42
