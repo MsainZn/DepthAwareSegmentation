@@ -38,7 +38,7 @@ This repository contains the official implementation of the paper:
 ## 🚀 Usage
 *Code will be released upon paper acceptance. Planned functionality:*
 ```bash
-# Installation
+## Installation
 git clone https://github.com/TO_BE_PUBLISHED_AFTER_REVIEW/segmentation-framework
 pip install -r requirements.txt
 
@@ -47,8 +47,8 @@ python predict.py --input path/to/image.jpg --output segmentation.png
 
 # Training
 python train.py --config configs/base.yml --data-dir path/to/dataset
-
-📂 Dataset
+```
+## 📂 Dataset
 The Breast-Aesthetics (BA) dataset consists of:
 
 120 RGB images with segmentation masks
@@ -59,7 +59,7 @@ Split: 70% train, 10% validation, 20% test
 
 Access: Private dataset available upon request. Cross-validation performed on CINDERELLA dataset.
 
-📍 Citation
+## 📍 Citation
 bibtex
 @article{zolfagharnasab2025towards,
   title={Towards Robust Breast Segmentation: Leveraging Depth Awareness and Convexity Optimization},
